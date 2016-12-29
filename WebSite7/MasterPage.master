@@ -1,0 +1,219 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!--   YOUR JQUERY CODE -------->
+<script src="js/jquery_code.js"> </script>
+<link href="css.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="container"> 
+        <div id="header">
+            <div class="panelLeft">
+				<ul id="topmenu_color" class="menu" style="border-bottom-width: 7px; border-bottom-style: solid; border-bottom-color: rgb(255, 1, 110);">
+			
+            <div class="logo">
+				<center>
+					<img src="download.png" />
+				</center>
+
+                <div class ="deskSearch">
+				   	<input name="search" id="search" type="text" placeholder="search" style="width:200px; height:30px; border:2px solid white; box-shadow:0 0 8px white; " />
+                 </div>
+            </div>
+            <div class="ele">
+					<center>
+					Explore the land of MAHARAJAS
+					</center>
+				</div>
+        </div>
+        </div>
+
+
+
+        <div id="menu">
+        <div class="panelLeft">
+				<ul id="Ul1" class="menu" style="border-bottom-width: 7px; border-bottom-style: solid; border-bottom-color: rgb(255, 1, 110);">
+              <ul>
+			<li>
+				<div class="dropdown">
+				<span>Explore</span>
+					<div class="dropdown-content">
+					<p> 
+                        <a href="Destinations.aspx">Destinations</a>
+					</p>
+						
+					<p>
+                        <a href="Forts.aspx">Forts</a>
+					</p>
+					
+					<p>Lakes</p>
+					<p>Palaces</p>
+					<p>Religious Places</p>
+					<p>Others</p>
+
+			</li>
+          
+           		<li>
+			<div class="dropdown">
+				<span>Experience</span>
+			<div class="dropdown-content">
+				<p>Festivals</p>
+				<p>Cuisines</p>
+				<p>Fairs</p>
+       <p>Adventures</p>
+    </li>
+
+     <li>
+     <div class="dropdown">
+  <span>Plan</span>
+  <div class="dropdown-content">
+    <p>Routes</p>
+     <p>Best time to visit</p>
+     <p>How to get here</p>
+      <p>Stay</p>
+       <p>Foreign Tourist</p>
+        <p>Travel Desk</p>
+    </li>
+
+    <li>
+    <div class="dropdown">
+  <span>About Us</span>
+  <div class="dropdown-content">
+    </li>
+
+     </ul>   
+        </div>
+        </div>
+
+
+
+        <div class="sliderContainer">	
+        
+											<!--  Slider Container  -->      
+		<div class="slider">											<!--   Your Slider          -->
+			<ul>
+				<li>																		<!-- One Single Slide Starts here	--->	
+					<img src="images/01.jpg"/>	<!-- // you can multiply them as meny times as you want---> 
+					<div class="slideCaption">Slide 1</div>				
+					<!-- however don't forget multiplay thumbs as well, all you need to do is increase ID of Thumb.If you add one to 6 slides then 
+							added thumb should has Id = "thumb7" one more?? no problem Id = "thumb8" .... ---> 	
+				</li>																		<!-- One Single Slide Ends here	--->						
+				<li>
+					<img src="images/02.jpg"/>
+													
+				</li>
+				<li>
+					<img src="images/03.jpg"/>
+									
+				</li>
+				<li>
+					<img src="images/04.jpg"/>
+										
+				</li>
+				<li>
+					<img src="images/05.jpg"/>
+														
+				</li>
+				<li>
+					<img src="images/06.jpg"/>
+								
+				</li>
+				<li>
+					<img src="images/07.jpg"/>
+														
+				</li>
+				<li>
+					<img src="images/08.jpg"/>
+									
+				</li>
+				<li>
+					<img src="images/09.jpg"/>
+													
+				</li>
+				<li>
+					<img src="images/10.jpg"/>
+									
+				</li>
+				<li>
+					<img src="images/11.jpg"/>
+														
+				</li>
+				<li>
+					<img src="images/12.jpg"/>
+									
+				</li>
+			</ul>
+			
+			<button class="prev" ><img src="images/left.png" width="100%"/></button>   <!-- prev & next buttons -->
+			<button class="next"><img src="images/right.png" width="100%"/></i></button>
+			
+			<button class="pause"><i class="fa fa-pause" ></i></button>  <!-- pause & play buttons -->
+			<button class="play"><i class="fa fa-play" ></i></button>
+            </div>
+		
+		</div>
+        
+        <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="gallery"> 
+        <div class="one"><center> Gallery</center><br /> </div>
+        <div class="img">
+  <a target="_blank" href="12.png">
+    <img src="12.png" alt="Trolltunga Norway" width="800" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="12.png">
+    <img src="12.png" alt="Forest" width="800px" height="600px">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="‪‪12.png">
+    <img src="12.png" alt="Northern Lights" width="800" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="‪12.png">
+    <img src="12.png" alt="Mountains" width="800" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+    </div>
+
+    </div>
+
+    </form>
+</body>
+</html>
